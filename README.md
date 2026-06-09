@@ -30,25 +30,15 @@ This is a static portfolio website built with HTML, CSS, and JavaScript.
 3. Use the default settings for a static site.
 4. Deploy and use the provided Vercel URL.
 
-## Custom domain
-
-This repository includes a `CNAME` file pointing to `vivaintiti.com`.
-
-### Configure GitHub Pages for `vivaintiti.com`
-
-1. Purchase `vivaintiti.com` from a domain registrar if it is available.
-2. In the GitHub repository `Settings` > `Pages`, set the custom domain to `vivaintiti.com`.
-3. In your registrar, add these DNS records:
-   - `A` → `185.199.108.153`
-   - `A` → `185.199.109.153`
-   - `A` → `185.199.110.153`
-   - `A` → `185.199.111.153`
-   - Optional: add a `CNAME` record for `www` pointing to `vivaintiti.com`
-4. Wait for DNS to propagate.
-
-Once configured, your site should be accessible at `https://vivaintiti.com/`.
-
 ## Local Preview
+
+To run the site locally:
+
+```powershell
+python -m http.server 3000
+```
+
+Then open `http://127.0.0.1:3000/`.
 
 To run the site locally:
 
