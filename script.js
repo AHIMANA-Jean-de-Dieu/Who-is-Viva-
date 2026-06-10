@@ -30,7 +30,7 @@ let certificateInterval;
 const updateCertificateViewer = (index) => {
     const page = index + 1;
     if (certificateViewer) {
-        certificateViewer.src = `${certificateSource}#page=${page}`;
+        certificateViewer.src = `${certificateSource}#page=${page}&toolbar=0&navpanes=0&scrollbar=0`;
     }
     if (pageLabel) {
         pageLabel.textContent = `Page ${page} of ${certificateCount}`;
