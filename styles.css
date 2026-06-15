@@ -187,113 +187,24 @@ header.hero-shell {
     background: linear-gradient(180deg, rgba(66, 112, 255, 0.12), rgba(255, 255, 255, 0.92));
 }
 
-.certificate-slider {
-    position: relative;
-    min-height: 420px;
-    border-radius: 24px;
-    overflow: hidden;
+.certificate-list {
     margin-top: 1rem;
-    border: 1px solid rgba(91, 124, 255, 0.18);
-    box-shadow: 0 20px 40px rgba(13, 35, 88, 0.12);
-    background: #f8fbff;
-}
-
-.certificate-frame {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.certificate-frame iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    display: block;
-    background: #ffffff;
-}
-
-.certificate-meta {
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    z-index: 2;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    color: #ffffff;
-    font-weight: 600;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-}
-
-.certificate-slider::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.08), rgba(15, 23, 42, 0.18));
-    pointer-events: none;
-}
-
-.certificate-dots {
-    position: absolute;
-    left: 50%;
-    bottom: 1rem;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 0.5rem;
-    z-index: 2;
-}
-
-.certificate-control.prev {
-    left: 1rem;
-}
-
-.certificate-control.next {
-    right: 1rem;
-}
-
-.certificate-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.9);
-    background: rgba(255, 255, 255, 0.35);
-    cursor: pointer;
-}
-
-.certificate-dot.active {
-    background: rgba(255, 255, 255, 0.92);
-}
-
-.certificate-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: none;
-    background: rgba(255, 255, 255, 0.18);
-    color: #ffffff;
-    font-size: 1.5rem;
     display: grid;
-    place-items: center;
-    cursor: pointer;
-    z-index: 2;
-    transition: background 150ms ease;
+    gap: 0.75rem;
+    padding: 0;
+    list-style: none;
 }
 
-.certificate-control:hover {
-    background: rgba(255, 255, 255, 0.34);
+.certificate-list li {
+    background: #ffffff;
+    border: 1px solid rgba(91, 124, 255, 0.18);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 14px 28px rgba(13, 35, 88, 0.08);
+    color: #0f172a;
+    font-weight: 600;
 }
 
-.certificate-control.prev {
-    left: 1rem;
-}
-
-.certificate-control.next {
-    right: 1rem;
-}
 
 .profile-card {
     padding: 1.25rem;
